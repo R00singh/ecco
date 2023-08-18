@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.userDropdown {
+  display: none;
+}
+
+.userDropdownBtn:hover .userDropdown {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+}
+
+.logoText{
+  color: white;
+  font-family: 'Pacifico', cursive;
+  text-transform: capitalize;
+  letter-spacing: 0.1em !important;
+  line-height: 1em;
+  font-size: xx-large;
+}
+
+/* Footer Styles */
+footer {
+	/* background: var(--lightGreen-1); */
+    background-color: rgb(221, 223, 223);
+}
+.footer__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+.footer__logo {
+	width: 150px;
+	margin-bottom: 2rem;
+}
+.footer__desc {
+	color: var(--black-2);
+	margin-bottom: 2rem;
+}
+.footer__socials__title {
+	color: var(--black-1);
+	margin-bottom: 1rem;
+}
+.footer__socials li {
+	display: inline-block;
+	margin-right: 0.5rem;
+}
+.footer__socials a {
+	padding: 0.5rem 0.8rem;
+	background-color: var(--white-1);
+	border: 1px solid var(--green-2);
+	border-radius: 8px;
+}
+.footer__socials svg {
+	width: 20px;
+	color: var(--black-2);
+}
+.footer__text__title {
+	margin-bottom: 1rem;
+	color: var(--black-1);
+	font-weight: 600;
+}
+.footer__text a {
+	margin-bottom: 0.5rem;
+	color: var(--black-2);
+	font-family: Raleway;
+	font-weight: 500;
+	line-height: 1.4em;
+}
+@media only screen and (min-width: 768px) {
+	footer {
+		padding-top: 8rem;
+		padding-bottom: 4rem;
+	}
+	.footer__wrapper {
+		flex-direction: row;
+	}
+	.footer__col1 {
+		flex: 4;
+	}
+	.footer__col2,
+	.footer__col3,
+	.footer__col4 {
+		flex: 2;
+	}
+	.footer__desc {
+		max-width: 300px;
+		margin-bottom: 2.5rem;
+	}
+	.footer__socials__title {
+		margin-bottom: 1.5rem;
+	}
+	.footer__text__title {
+		margin-bottom: 2rem;
+	}
+	.footer__text a {
+		margin-bottom: 1rem;
+	}
+}
+#copyright {
+	padding: 1rem 0;
+}
+.copyright__text {
+	text-align: center;
+}
+@media only screen and (min-width: 768px) {
+	.copyright__text {
+		text-align: left;
+	}
+}
+/* End Footer Styles */
